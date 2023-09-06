@@ -13,7 +13,7 @@ export const Container = styled.header`
   padding: 0 8rem;
 `;
 
-export const Profile = styled.header`
+export const Profile = styled.div`
   display: flex;
   align-items: center;
 
@@ -39,5 +39,15 @@ export const Profile = styled.header`
       font-size: 1.8rem;
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
+  }
+`;
+
+export const Logout = styled.button`
+  border: none;
+  background: none;
+
+  > svg {
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    font-size: 3.6rem;
   }
 `;
