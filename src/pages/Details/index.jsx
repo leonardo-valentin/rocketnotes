@@ -11,7 +11,7 @@ export function Details() {
       <Header />
       <main>
         <Content>
-          <ButtonText title="Excluir nota" />
+          <ButtonText title="Excluir nota" isActive />
 
           <h1>Introdução ao React</h1>
 
