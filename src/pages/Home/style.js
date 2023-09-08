@@ -53,8 +53,20 @@ export const Search = styled.div`
 `;
 
 export const Content = styled.div`
-  background: violet;
   grid-area: content;
+  padding: 0 6.4rem;
+
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.COLORS.GRAY_100};
+  }
 `;
 
 export const Newnote = styled.button`
